@@ -1022,12 +1022,9 @@ ul.menu {
 		
 .img_container img {display: none;}
 /*===========================================================================*/
-/*
-Was needed for the yellow columns that were removed on 2019-08-07 to accomodate new header design and content.
 .margin {
-	margin: -66px 0 0 -18px; 
+	margin: -66px 0 0 -18px;
 }
-*/
 
 
 .list_1 {
@@ -1313,122 +1310,122 @@ h3.catItemTitle a {
     color: #717171;
 }
 
-.dr-kleppe-intro{
-	float:left;
-	margin-right:20px;
-	padding: 10px;
-	text-align:center;
-}
+
+
+
 
 .main{max-width: 980px;}
-#button{float: right;border: none;height: 24px;width:30px;position: absolute;top:16px;right: 0;cursor: pointer;background: url(../images/all-icons.png)no-repeat;}
-/*.bar1,.bar2,.bar3{width: 28px;height:3px;background-color: #000;margin:5px 0;transition: 0.4s;display: block;}*/
+#button{float: right;border: none;background-color: transparent;height: 40px;width: 35px;position: absolute;top: 0;right: 12px;cursor: pointer;}
+.bar1,.bar2,.bar3{width: 28px;height: 5px;background-color: #000;margin:4px 0;transition: 0.4s;display: block;}
 .change .bar1{transform: rotate(-45deg) translate(-9px, 6px);}
 .change	 .bar2{opacity: 0;}
 .change .bar3{transform: rotate(45deg) translate(-8px, -8px);}
 #button{display:none;}
 .extra{padding: 10px 10px 10px;}
-.first .error{margin: 0;}
+
+
 
 @media screen and (max-width:1000px){
 	#faded{width:auto;}
-	.providerItem{width: 21%;}	
+	.providerItem{width: 21%;}
+	
+	
 }
+
 @media screen and (max-width:992px){
 	.sf-menu li,.navigation > .sf-menu > li:first-child,.navigation > .sf-menu > li{width: 148px;}
 	#logo{margin-left: 0;width: 75%;padding-left: 10px;}
 	#logo img{width: 100%;}
 	body.first div.col_2{width: auto;}
-	.first .alignright{text-align: center;padding-top: 15px;padding-right: 11px;padding-left: 14px;}
+	.first .alignright{text-align: center;}
 	.border-bottom .padding:nth-child(3){text-align: center;padding-left: 28px;}
 	.custom p a img,.custom a img{width: 100%;}
 	.custom p span a img,.alignright a img,.wrapper.border-bottom a img{width: auto;}
-	#logo img{width:90%;float: left;}
+	#logo img{width: 80%;float: left;}
 	.col-left{width: 48%;padding-right: 20px;}
 	.col-right{width: 48%;float: left;}
 	.col-right .col-right.col-right-1{width:100%;}
-	#faded ul li{position: relative !important;max-width: 100%;}
-	#faded ul li img{max-width: 100%;}
-	#faded{height: auto;}
 }
+
+
+
+
+
 @media screen and (max-width:767px){
-	.sf-menu li,.navigation > .sf-menu > li:first-child,.navigation > .sf-menu > li{width:100%;margin-left: 0;}
+	.sf-menu li,.navigation > .sf-menu > li:first-child,.navigation > .sf-menu > li{width:100%;}
 	.navigation .sf-menu{width: 100%;display: none;margin-top: 30px;position: absolute;top: 30px;}
 	#logo{margin: 0;padding: 10px;float: left;height: auto;padding-right: 0;}
-	ul.menu{float:left;padding: 10px 0;width: auto;}
 	.list_1 li{padding: 5px;}
 	.border-bottom .padding p img{text-align: center;width: 100%;padding-bottom: 12px;}
 	#content{float: left;}
 	.wrapper > #right{float: left;margin: 0;width:100%;}
 	.navigation{height: 0;}
+	ul.menu{width: 85%;float:left;padding: 10px 0;}
 	ul.menu li{display: inline-block;}
 	#button{display: block;}
 	body.first .navigation > .sf-menu > li a,body.all .navigation > .sf-menu > li a{padding:20px 10px;text-transform: uppercase;font-size: 17px;}
 	.providerItem{width: 22%;padding: 0 7px 30px 7px;}
 	ul.menu li a{background: none;}
-	#button:focus,#button:active{border: none;outline: 0;}
 
+
+	
 }
+
+
+
+
+
+
 @media screen and (min-width:520px) and (max-width:766px){
 	
 }
 @media screen and (max-width:640px){
-	.content{padding: 0 12px;}
+	.content{padding: 0 10px 0px 23px;}
 	p{padding-top: 10px;}
 	body.first div.col_2{float: left;margin: 0;width: auto;}
 	body.first ul.list_1{width: auto;}
 	.col_2 .border-bottom h3{padding: 16px 0 0;text-align: center;}
-	.border-bottom .padding p img{float: none !important;height: auto;width: auto;display: inherit;margin: 0 auto !important;}
-	.border-bottom .padding{padding:0 12px;}
-	.content.contents .margin ul.list_1{margin-left:15px;margin-top:44px;}
+	.border-bottom .padding p img{float: none !important;width: 100%;height: 100%;padding-bottom: 10px;}
+	.border-bottom .padding{padding-left: 0;}
+	.content{padding-left: 22px;}
 	#content{float: none;}
-	.wrapper.wrappers p img{max-width: 100%;text-align: center;float: left !important;}
-	.wrapper p img{padding-bottom: 15px;margin: 0 auto !important;display: flex;flex-wrap: wrap;float: none !important;}
+	.wrapper p img{margin: 0 !important;width: 100%;padding-bottom: 13px;}
     .col-right,.col-left{width: 100%;}
 	.wrapper #content{float: left;}
 	.providerItem{width: 47%;}
-	.wrapper p.first-child img{width: auto;}
-	.item-page iframe{width: 100%;float: left;}	
+    .item-page h1.wrapper img{width: 100%;}
+
+
+
+	
 } 
+
 @media screen and (max-width:519px){
 	#logo{margin: 0;padding: 14px;width: auto;height: auto;}
-	ul.menu{float: left;padding: 0px 0px 10px;width: 100%;}
-	.list_1 li{padding:0 8px 0 8px;}
+	ul.menu{float: left;padding: 0px 0px 10px;}
+	.list_1 li{padding:0 4px 0 4px;}
 	.col1{width:100%;}
 	.custom h4{display: flex;flex-wrap: wrap;padding-bottom: 0;}
-	.custom h4 img{float: left !important;height: auto;display: inherit;}
+	.custom h4 img{float: left;width: 100%;height: 100%;}
     #button{display: block}
     .col-right{float: left;width: 100%;}
 	.col-left{width: 100%;float: left;padding: 0;}
 	.providerItem{width: 46%;;}
-	ul.menu li a{background: none;font-size:16px;}
+	ul.menu li a{background: none;font-size:14px;}
 	.Careers-left {width: 100% !important;}
 	.Careers-right{width: 100% !important;margin: 0 !important;}
 	h1.wrapper span.img img{width:100%;}
     .componentheading{font-size: 20px;padding-bottom: 10px;padding-top: 0;}
 	div.catItemLinks{margin: 0 0 0px 0;}
-	.globalnews div{width: 100%;padding-bottom:10px;}
-	.gn_static_1{width: 100%;}
-	h1.first-child,h1.first-child span,h2.first-child{float: left;}
-	h1.first-child,h2.first-child{text-align: center}
-	h1.first-child img,h2.first-child img,h2.first-child{float: none !important;}
-	h1.first-child span img{width: 100%;}
-	.width100{width:100%;}
-	 .item-page h1.wrapper img{width: 100%;}
-	.item-page div p.first-child{text-align: center;}
-	.item-page div p.first-child img{float: none !important;text-align: center;width: auto;}
-	ul.menu li.item-144 a{padding-left: 0;}
-	.col_2 .border-bottom p{padding: 13px 6px 0px;}
-  .dr-kleppe-intro {
-    float: none;
-    margin-right: 20px;
-    border: none;
-    padding: 10px;
-    text-align: center;
+	
 }
-  
-}
+
 @media screen and (max-width:400px){   
      .providerItem{width: 250px;text-align: center;}
-	 ul.menu li a{font-size:13px;}
+	 ul.menu li a{font-size: 10px;}
+
+	
 }
+
+
+	
