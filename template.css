@@ -1384,48 +1384,72 @@ h3.catItemTitle a {
 	p{padding-top: 10px;}
 	body.first div.col_2{float: left;margin: 0;width: auto;}
 	body.first ul.list_1{width: auto;}
-	.col_2 .border-bottom h3{padding: 16px 0 0;text-align: center;}
-	.border-bottom .padding p img{float: none !important;width: 100%;height: 100%;padding-bottom: 10px;}
+	.col_2 .border-bottom h3{
+		padding: 16px 0 0;
+		text-align: center;
+	}
+	.border-bottom .padding p img{
+		float: none !important;
+		width: 100%;
+		height: 100%;
+		padding-bottom: 10px;
+	}
 	.border-bottom .padding{padding-left: 0;}
 	.content{padding-left: 22px;}
 	#content{float: none;}
-	.wrapper p img{margin: 0 !important;width: 100%;padding-bottom: 13px;}
-    .col-right,.col-left{width: 100%;}
+	.wrapper p img{
+		margin: 0 !important;
+		width: 100%;
+		padding-bottom: 13px;
+	}
+	.col-right,.col-left{width: 100%;}
 	.wrapper #content{float: left;}
 	.providerItem{width: 47%;}
-    .item-page h1.wrapper img{width: 100%;}
-
-
-
-	
+	.item-page h1.wrapper img{width: 100%;}	
 } 
 
 @media screen and (max-width:519px){
-	#logo{margin: 0;padding: 14px;width: auto;height: auto;}
-	ul.menu{float: left;padding: 0px 0px 10px;}
+	#logo{
+		margin: 0;
+		padding: 14px;
+		width: auto;
+		height: auto;
+	}
+	ul.menu{
+		float: left;
+		padding: 0px 0px 10px;
+	}
 	.list_1 li{padding:0 4px 0 4px;}
 	.col1{width:100%;}
-	.custom h4{display: flex;flex-wrap: wrap;padding-bottom: 0;}
+	.custom h4{
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 0;
+	}
 	.custom h4 img{float: left;width: 100%;height: 100%;}
-    #button{display: block}
-    .col-right{float: left;width: 100%;}
+	#button{display: block}
+	.col-right{float: left;width: 100%;}
 	.col-left{width: 100%;float: left;padding: 0;}
 	.providerItem{width: 46%;;}
 	ul.menu li a{background: none;font-size:14px;}
 	.Careers-left {width: 100% !important;}
-	.Careers-right{width: 100% !important;margin: 0 !important;}
+	.Careers-right{
+		width: 100% !important;
+		margin: 0 !important;
+	}
 	h1.wrapper span.img img{width:100%;}
-    .componentheading{font-size: 20px;padding-bottom: 10px;padding-top: 0;}
+	.componentheading{
+		font-size: 20px;
+		padding-bottom: 10px;
+		padding-top: 0;
+	}
 	div.catItemLinks{margin: 0 0 0px 0;}
-	
 }
 
-@media screen and (max-width:400px){   
-     .providerItem{width: 250px;text-align: center;}
-	 ul.menu li a{font-size: 10px;}
-
-	
+@media screen and (max-width:400px){
+	.providerItem{
+		width: 250px;
+		text-align: center;
+	}
+	ul.menu li a{font-size: 10px;}
 }
-
-
-	
